@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankingBot</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous">
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="logo2.jpg" alt="" width="120" height="60"></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Personal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Loan</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Invest
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Fixed Deposit</a></li>
+              <li><a class="dropdown-item" href="#">Recurring Deposit</a></li>
+              <li><a class="dropdown-item" href="#">Demat</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cards
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Debit Card</a></li>
+              <li><a class="dropdown-item" href="#">Credit Card</a></li>
+              <li><a class="dropdown-item" href="#">Commercial Card</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customer Service</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-toggle="modal"
+            data-target="#loginModal">Login</button>
+         
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="loginModal" tabindex="-1"
+  aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Welcome to AWS Bank</h5>
+        <button type="button" class="close" data-dismiss="modal"
+          aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Customer ID</label>
+            <input type="email" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never
+              share your customer ID with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control"
+              id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input"
+              id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-success">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"
+          data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div> <!--Carousel-->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade"
+      data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="slide1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to AWS Bank</h2>
+            <p>Digital Account</p>
+            <button class="btn btn-danger">Technology</button>
+            <button class="btn btn-primary">Online Banking</button>
+            <button class="btn btn-success">Anytime Service</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slide2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Invest in Stocks</h2>
+            <p>Be Full Time Stock Trader</p>
+            <button class="btn btn-danger">Large Cap</button>
+            <button class="btn btn-primary">Mid Cap</button>
+            <button class="btn btn-success">Small Cap</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slide5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Easy Home Loans</h2>
+            <p>Own a House at Easy EMI</p>
+            <button class="btn btn-danger">Home Loans</button>
+            <button class="btn btn-primary">Car Loans</button>
+            <button class="btn btn-success">Easy EMI</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slide3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Manage Your Accounts Anytime</h2>
+            <p>Grow your money</p>
+            <button class="btn btn-danger">Fixed Deposite</button>
+            <button class="btn btn-primary">Recurring</button>
+            <button class="btn btn-success">Savings</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slide4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Save for Your Next Generation</h2>
+            <p>Secure Your Child's Future</p>
+            <button class="btn btn-danger">Mutual Funds</button>
+            <button class="btn btn-primary">Education Loan</button>
+            <button class="btn btn-success">Insurance</button>
+          </div>
+        </div>
+        
+        
+      </div>
+      <button class="carousel-control-prev" type="button"
+        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button"
+        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container my-5 mx-5">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4
+            shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Loans</strong>
+              <h3 class="mb-0">Easy Loans With Us</h3>
+              <p class="card-text mb-auto">Offers on Home Loans, Personal Loans and others on easy EMI and minimal processing fees</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250"
+                src="card1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4
+            shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-danger">Learn Stocks and Investments</strong>
+              <h3 class="mb-0">Stock Trading</h3>
+              
+              <p class="mb-auto">Be Fearful when others are Greedy and be Greedy when others are Fearful-Warren Buffet. Learn Basics of Investments with our experts</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250"
+                src="card2.jpg" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4
+            shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Save With Us</strong>
+              <h3 class="mb-0">Save and Invest</h3>
+              
+              <p class="card-text mb-auto">Save your money and grow more assets with us.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250"
+                src="card3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4
+            shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-danger">Offers %</strong>
+              <h3 class="mb-0">Easy EMI With Credit Card</h3>
+              
+              <p class="mb-auto">Buy any product with AWS's easy EMI option. Avail your credit card now</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250"
+                src="card4.jpg" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4
+            shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">SIP Calculator</strong>
+              <h3 class="mb-0">Track Your SIP Goals</h3>
+              
+              <p class="card-text mb-auto">Know your SIP goals and start investing from today.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250"
+                src="card5.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4
+            shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-danger">Digital Banking</strong>
+              <h3 class="mb-0">Open a Savings Account with no Paper Work</h3>
+              
+              <p class="mb-auto">Now Transfer Funds to your loved ones easily on your mobile phone</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="300" height="250"
+                src="card6.jpg" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>@Copyright AWS Bank Pvt.Ltd . All rights Reserved. <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+<!--JavaScript Code to make Carousel Dynamic-->
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  crossorigin="anonymous"></script>
+  <!--Kommunicate Code to Add Chatbot to the website-->
+  <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"253f0578732df971e144e083a7b3ce877","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</body>
+</html>
